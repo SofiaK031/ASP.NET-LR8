@@ -1,0 +1,36 @@
+﻿@using LR8.Models
+@{
+    ViewData["Title"] = "Table of products";
+    List<ProductModel> products = @Model;
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/productsAsTable.css" />
+</head>
+
+<div class="container mt-5">
+    <h4 class="text-center display-5 mb-4">Table of products</h4>
+    <table class="table table-striped table-bordered table-hover">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Type</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Created date</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var product in products)
+        {
+            <tr>
+                <td id="productID">@product.Id</td>
+                <td>@product.Type</td>
+                <td>@product.Name</td>
+                <td id="productPrice">@product.Price$</td>
+                <td id="createdDate">@product.CreatedDate.ToString("G")</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>

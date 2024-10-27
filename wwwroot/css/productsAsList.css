@@ -1,0 +1,26 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+.my-list {
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    list-style-type: none;
+    padding: 0;
+    font-size: 16px;
+}
+
+#my-li {
+    margin: 8px 0px;
+}
+
+h4 {
+    margin: 30px;
+    font-family: "Dancing Script", cursive;
+}
+
+.text-center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
